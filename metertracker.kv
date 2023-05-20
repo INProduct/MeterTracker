@@ -1,0 +1,18 @@
+ScreenManager:
+    id: sm
+
+    Screen:
+        name: 'screen1'
+        AnchorLayout:
+            BoxLayout:
+
+            Button:
+                text: 'go to screen 2'
+                on_release: sm.current = 'screen2'
+
+    Screen:
+        name: 'screen2'
+        AnchorLayout:
+            Button:
+                text: 'go to screen 1'
+                on_release: sm.current = 'screen1'
